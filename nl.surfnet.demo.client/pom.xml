@@ -43,12 +43,12 @@
         <dependency>
             <groupId>org.wso2.carbon.apimgt</groupId>
             <artifactId>org.wso2.carbon.apimgt.impl</artifactId>
-            <version>1.2.4</version>
+            <version>6.1.64</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.apimgt</groupId>
             <artifactId>org.wso2.carbon.apimgt.gateway</artifactId>
-            <version>1.2.4</version>
+            <version>6.1.64</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -58,12 +58,12 @@
         <dependency>
             <groupId>org.wso2.carbon.apimgt</groupId>
             <artifactId>org.wso2.carbon.apimgt.keymgt</artifactId>
-            <version>1.2.4</version>
+            <version>6.1.64</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.apimgt</groupId>
             <artifactId>org.wso2.carbon.apimgt.hostobjects</artifactId>
-            <version>1.2.4</version>
+            <version>6.1.64</version>
         </dependency>
     </dependencies>
 
@@ -94,7 +94,6 @@
                         <Export-Package>
                             nl.surfnet.demo.*;version="1.0.0"
                         </Export-Package>
-                        <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
                 </configuration>
             </plugin>
