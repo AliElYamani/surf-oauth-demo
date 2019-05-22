@@ -418,6 +418,9 @@ public class SurfOAuthClient extends AbstractKeyManager {
             if (log.isDebugEnabled()) {
                 log.debug("HTTP Response code : " + responseCode);
             }
+            
+            if(tokenInfo.getEndUserName() == null || tokenInfo.getEndUserName().isEmpty())
+            tokenInfo.setEndUserName("admin");
 
             // {"audience":"MappedClient","scopes":["test"],"principal":{"name":"mappedclient","roles":[],"groups":[],"adminPrincipal":false,
             // "attributes":{}},"expires_in":1433059160531}
