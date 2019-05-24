@@ -460,7 +460,9 @@ public class SurfOAuthClient extends AbstractKeyManager {
                     long expiryTime = expiryTimeString;
                     if (expiryTime > currentTime) {
                         tokenInfo.setTokenValid(true);
-                        tokenInfo.setConsumerKey(clientId);
+                        tokenInfo.setConsumerKey(((String)valueMap.get("audience")).toLowerCase());
+                        //tokenInfo.setConsumerKey("appimplicit");
+                        
                         tokenInfo.setValidityPeriod(expiryTime - currentTime);
                         // Considering Current Time as the issued time.
                         tokenInfo.setIssuedTime(currentTime);
